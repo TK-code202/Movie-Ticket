@@ -61,7 +61,6 @@ function displayTicketDetails(movieCartToDisplay) {
     ticketsList.html(htmlForTicketInfo);
 }
 
-
 function showTicket(ticketId) {
     const ticket = movieCart.findTicket(ticketId);
     $(".ticket-shown").show(1000);
