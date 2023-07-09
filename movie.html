@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/">
+    <title>Movies</title>
+</head>
+
+<body>
+    <div class="content">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+
+            <div class="container-fluid ">
+                <a class="navbar-brand text-uppercase logo" href="index.html">🎞Galaxy Cinemas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="movie.html">Book A Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/fastx.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/transformers.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/indiana jones2.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h5 class="text-info text-uppercase mb-3 solid-text">Coming to galaxy cinemas soon</h5>
+                </div>
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-3">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/oppenheimer2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="text-left mb-4">
+                            <h5 class="text-info text-uppercase mb-3" style="letter-spacing: 5px;">OPPENHEIMER</h5>
+                            <h1>A film by Christopher Nolan</h1>
+                        </div>
+                        <p class="text-light">A feature documentary exploring how one man's brilliance, hubris and relentless drive changed the nature of war forever, led to the deaths of hundreds of thousands of people and unleashed mass hysteria, and how, subsequently, the same man's attempts to co.</p>
+                        <p class="text-light">Release date: 21 July 2023 (Nigeria)</p>
+                        <a href="" class="btn btn-info py-md-2 px-md-4 font-weight-semi-bold mt-2">Advance Tickets</a>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-3">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/dune part wo.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="text-left mb-4">
+                            <h5 class="text-info text-uppercase mb-3 solid-text" >Dune : Part Two</h5>
+                        </div>
+                        <p class="text-light">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.</p>
+                        <p class="text-light">Release date: 3 November 2023</p>
+                        <a href="" class="btn btn-info py-md-2 px-md-4 font-weight-semi-bold mt-2">Advance Tickets</a>
+                    </div>
+                </div>
+
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-3">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/barbie.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="text-left mb-4">
+                            <h5 class="text-info text-uppercase mb-3 solid-text">Barbie</h5>
+                        </div>
+                        <p class="text-light">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+                        <p class="text-light">Release date: 21 July 2023 (Nigeria)</p>
+                        <a href="" class="btn btn-info py-md-2 px-md-4 font-weight-semi-bold mt-2">Advance Tickets</a>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-3">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/marvels.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="text-left mb-4">
+                            <h5 class="text-info text-uppercase mb-3 solid-text">The Marvels</h5>
+                        </div>
+                        <p class="text-light">Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. However, unintended consequences see her shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with two other superheroes to form the Marvels.</p>
+                        <p class="text-light">Release date: 10 November 2023</p>
+                        <a href="" class="btn btn-info py-md-2 px-md-4 font-weight-semi-bold mt-2">Advance Tickets</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h5 class="text-info text-uppercase mb-3 solid-text">Movie Ticket</h5>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="card border-0 mb-2">
+                            <div class="card-header bg-light text-center p-4">
+                                <h1 class="m-0">Book A Ticket</h1>
+                            </div>
+                            <div class="card-body rounded-bottom bg-info p-5">
+                                <form id="formOne">
+                                    <div class="ticket-input-group">
+                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="name-of-movie">
+                                            <option selected>Select a movie</option>
+                                            <option value="Anikulapo">Anikulapo</option>
+                                            <option value="Ant Man and the Wasp: Quantumania">Ant Man and the Wasp: Quantumania</option>
+                                            <option value="A Man Called Otto">A Man Called Otto</option>
+                                            <option value="Are You There God? It's Me, Magaret">Are You There God? It's Me, Magaret</option>
+                                            <option value="Babylon(I)">Babylon(I)</option>
+                                            <option value="Barbie (I)">Barbie (I)</option>
+                                            <option value="Black Panther: Wakanda Forever">Black Panther: Wakanda Forever</option>
+                                            <option value="Creed III">Creed III</option>
+                                            <option value="Doctor Strange in The Multiverse Of Madness">Doctor Strange in The Multiverse Of Madness</option>
+                                            <option value="Everything Everywhere All At Once">Everything Everywhere All At Once</option>
+                                            <option value="Extraction 2">Extraction 2</option>
+                                            <option value="Fantastic Beasts: The Secrets Of Dumbledore">Fantastic Beasts: The Secrets Of Dumbledore</option>
+                                            <option value="Fast X">Fast X</option>
+                                            <option value="Guardians Of The Galaxy Vol.3">Guardians Of The Galaxy Vol.3</option>
+                                            <option value="Indiana Jones and the Dial of Destiny">Indiana Jones and the Dial of Destiny</option>
+                                            <option value="Lightyear">Lightyear</option>
+                                            <option value="John Wick: Chapter 4">John Wick: Chapter 4</option>
+                                            <option value="Magic Mikes's Last Dance">Magic Mikes's Last Dance</option>
+                                            <option value="Mavka. The Forest Song">Mavka. The Forest Song</option>
+                                            <option value="M3GAN">M3GAN</option>
+                                            <option value="Missing">Missing</option>
+                                            <option value="Mission Impossible- Dead Reckoning Part One">Mission Impossible- Dead Reckoning Part One</option>
+                                            <option value="Nope">Nope</option>
+                                            <option value="Oppenheimer">Oppenheimer</option>
+                                            <option value="Peter Pan & Wendy">Peter Pan & Wendy</option>
+                                            <option value="Plane">Plane</option>
+                                            <option value="Puss in Boots: The Last Wish">Puss in Boots: The Last Wish</option>
+                                            <option value="Roald Dahl's Maltida The  Musical">Roald Dahl's Maltida The  Musical</option>
+                                            <option value="Shazam!Fury of the Gods">Shazam!Fury of the Gods</option>
+                                            <option value="Spiderman: Across The Spider-Verse">Spiderman: Across The Spider-Verse</option>
+                                            <option value="Spiderman: No Way Home">Spiderman: No Way Home</option>
+                                            <option value="Strays">Strays</option>
+                                            <option value="The Batman">The Batman</option>
+                                            <option value="The Flash">The Flash</option>
+                                            <option value="The Little Mermaid">The Little Mermaid</option>
+                                            <option value="The Super Mario Bros. Movie">The Super Mario Bros. Movie</option>
+                                            <option value="The Whale">The Whale</option>
+                                            <option value="The Woman King">The Woman King</option>
+                                            <option value="Thor: Love and Thunder">Thor: Love and Thunder</option>
+                                            <option value="Titanic: 25th Anniversary Re-release">Titanic: 25th Anniversary Re-release</option>
+                                            <option value="Top Gun Maverick">Top Gun Maverick</option>
+                                            <option value="Transformers: Rise Of The Beasts">Transformers: Rise Of The Beasts</option>
+                                            <option value="X">X</option>
+                                            <option value="65">65</option>
+                                        </select>
+                                    </div>
+                                    <div class="ticket-input-group">
+                                        <input type="date" class="ticket-input border-0 p-4" placeholder="Your name" required="required" id="date-of-viewing">
+                                    </div>
+                                    <div class="ticket-input-group">
+                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="time-of-viewing">
+                                            <option selected>Time Of Viewing</option>
+                                            <option value="11:00AM">11:00AM</option>
+                                            <option value="12:30PM">12:30PM</option>
+                                            <option value="2:00PM">2:00PM</option>
+                                            <option value="4:00PM">4:00PM</option>
+                                            <option value="6:00PM">6:00PM</option>
+                                            <option value="8:00PM">8:00PM</option>
+                                        </select>
+                                    </div>
+                                    <div class="ticket-input-group">
+                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="type-of-ticket">
+                                            <option selected>Ticket Type</option>
+                                            <option value="Reular Ticket">Reular Ticket (N4000)</option>
+                                            <option value="VIP Ticket">VIP Ticket (N5500)</option>
+                                        </select>
+                                    </div> 
+                                    <div class="ticket-input-group">
+                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="number-of-seats">
+                                            <option selected>Number Of Seats</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-dark btn-book border-0 py-3" type="submit">Add To Movie Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card border-0 mb-2">
+                            <div class="card-header bg-secondary text-center p-4">
+                                <h1 class="m-0">🛒Movie Cart</h1>
+                            </div>
+                            <div class="card-body rounded-bottom p-5 cart">
+                                <h6 class="text-light">Click Ticket To View Ticket Details</h6>
+                                <ul id="ticket-list">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ticket-shown">
+                        <div class="card border-0 mb-2">
+                            <div class="card-header bg-secondary text-center p-4">
+                                <h4 class="text-uppercase logo">🎞Galaxy Cinemas</h4>
+                            </div>
+                            <div class="card-body rounded-bottom p-5 bg-primary">
+                                <h5 class="text-light">Movie Ticket Details</h5>
+                                <p class="mt-5">Movie: <span class="movie-name"></span></p>
+                                <p>Date Of Viewing: <span class="viewing-date"></span></p>
+                                <p>Time Of Viewing: <span class="viewing-time"></span></p>
+                                <p>Ticket Type: <span class="ticket-type"></span></p>
+                                <p>Number Of Seat(s): <span class="seats"></span></p>
+                                <p>Price: N<span class="total-price"></span></p>
+
+                                <div id="buttons">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5 footer">
+            <div class="row">
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a href="https://www.linkedin.com/in/tofunmi-kusimo/">TK Development and Studios</a>. Designed by <a href="https://www.linkedin.com/in/tofunmi-kusimo/">Tofunmi Kusimo</a>.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-md-right">
+                    <ul class="nav d-inline-flex">
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
