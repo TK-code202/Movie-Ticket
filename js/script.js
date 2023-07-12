@@ -39,6 +39,7 @@ function Ticket(name, date, time, type, seats) {
     this.time = time;
     this.type = type;
     this.seats = seats;
+    this.price = 0;
 }
 
 // Ticket.prototype.ticketName = function () {
@@ -61,14 +62,31 @@ function displayTicketDetails(movieCartToDisplay) {
     ticketsList.html(htmlForTicketInfo);
 }
 
+function calculatePrice (ticket) {
+    let integer = parseInt(ticket.seats);
+    const string = ticket.type
+    if (string === "VIP Ticket") {
+        ticket.price = integer * 5500;
+        return ticket.price;
+    } else if (string === "Senior Ticket") {
+        ticket.price = integer * 3500;
+        return ticket.price;
+    } else {
+        ticket.price = integer * 4000;
+        return ticket.price;
+    }
+}
+
 function showTicket(ticketId) {
     const ticket = movieCart.findTicket(ticketId);
+    const price = calculatePrice(ticket);
     $(".ticket-shown").show(1000);
     $(".movie-name").html(ticket.name);
     $(".viewing-date").html(ticket.date);
     $(".viewing-time").html(ticket.time);
     $(".ticket-type").html(ticket.type);
     $(".seats").html(ticket.seats);
+    $(".total-price").html(price);
     let buttons = $("#buttons");
     buttons.empty();
     buttons.append("<button class='deleteButton' id=" +  ticket.id + ">Remove From Cart</button>");
@@ -109,6 +127,8 @@ $(document).ready(function () {
         let newTicket = new Ticket(inputtedName, inputtedDate, inputtedTime, inputtedType, inputtedNumber);
         movieCart.addTickets(newTicket);
         displayTicketDetails(movieCart);
-        // console.log(movieCart.tickets);
+        // const price = calculatePrice(inputtedNumber, inputtedType);
+        // $(".total-price").html(price);
+        console.log(price);
     });
 });
