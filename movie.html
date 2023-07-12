@@ -9,8 +9,8 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/">
-    <title>Movies</title>
+    <link rel="icon" href="img/logo.jpg">
+    <title>Galaxy Cinemas</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                             <a class="nav-link active" aria-current="page" href="movie.html">Book A Ticket</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Store</a>
@@ -59,23 +59,23 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/fastx.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-none d-sm-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <div class="carousel-caption d-none d-sm-block bg-primary caption">
+                        <h5>Now Showing:</h5>
+                        <p>Fast X</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/transformers.jpg" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-none d-sm-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="carousel-caption d-none d-sm-block bg-primary caption">
+                        <h5>Now Showing:</h5>
+                        <p>Transformers: Rise Of The Beasts</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/indiana jones2.jpg" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption d-none d-sm-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h5>Now Showing:</h5>
+                        <p>Indiana Jones And The Dial Of Destiny</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
             </div>
         </div>
 
-        <div class="container-fluid py-5">
+        <div class="container-fluid py-5" id="movie-ticket">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h5 class="text-info text-uppercase mb-3 solid-text">Movie Ticket</h5>
@@ -170,7 +170,7 @@
                             <div class="card-body rounded-bottom bg-info p-5">
                                 <form id="formOne">
                                     <div class="ticket-input-group">
-                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="name-of-movie">
+                                        <select class="custom-select border-0 px-4" id="name-of-movie">
                                             <option selected>Select a movie</option>
                                             <option value="Anikulapo">Anikulapo</option>
                                             <option value="Ant Man and the Wasp: Quantumania">Ant Man and the Wasp: Quantumania</option>
@@ -222,7 +222,7 @@
                                         <input type="date" class="ticket-input border-0 p-4" placeholder="Your name" required="required" id="date-of-viewing">
                                     </div>
                                     <div class="ticket-input-group">
-                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="time-of-viewing">
+                                        <select class="custom-select border-0 px-4" id="time-of-viewing">
                                             <option selected>Time Of Viewing</option>
                                             <option value="11:00AM">11:00AM</option>
                                             <option value="12:30PM">12:30PM</option>
@@ -233,14 +233,15 @@
                                         </select>
                                     </div>
                                     <div class="ticket-input-group">
-                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="type-of-ticket">
+                                        <select class="custom-select border-0 px-4" id="type-of-ticket">
                                             <option selected>Ticket Type</option>
-                                            <option value="Reular Ticket">Reular Ticket (N4000)</option>
-                                            <option value="VIP Ticket">VIP Ticket (N5500)</option>
+                                            <option value="Regular Ticket">Regular Ticket (₦4000)</option>
+                                            <option value="Senior Ticket">Senior Ticket (₦3500)</option>
+                                            <option value="VIP Ticket">VIP Ticket (₦5500)</option>
                                         </select>
                                     </div> 
                                     <div class="ticket-input-group">
-                                        <select class="custom-select border-0 px-4" style="height: 47px;" id="number-of-seats">
+                                        <select class="custom-select border-0 px-4" id="number-of-seats">
                                             <option selected>Number Of Seats</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -298,7 +299,7 @@
                                 <p>Time Of Viewing: <span class="viewing-time"></span></p>
                                 <p>Ticket Type: <span class="ticket-type"></span></p>
                                 <p>Number Of Seat(s): <span class="seats"></span></p>
-                                <p>Price: N<span class="total-price"></span></p>
+                                <p>Price: ₦<span class="total-price"></span></p>
 
                                 <div id="buttons">
 
