@@ -15,7 +15,7 @@
 
 ## Description
 
-_The website enables users book tickets by selecting movies to be viewed and other prefernces in a form . Ticket details can then be viewed through functions employing the concept of event delegation._
+> The website enables users book tickets by selecting movies they wish to view along with other prefernces in a form. Ticket details can then be viewed through functions employing the concept of event delegation.
 
 ## Setup/Installation Requirements
 
